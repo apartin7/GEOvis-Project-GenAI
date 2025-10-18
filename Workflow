@@ -1,1 +1,27 @@
-[![](https://mermaid.ink/img/pako:eNqFlF1v2jAUhv-KZam7oi2BhI9cTIIEqkqrVJWuFzO98JIDjZTYlu10o1X_-44doEnHVq5CznO-35NXmskcaEw3pfyVPXFtyX26FgR_M3YtVG1Jyi1_JOfnX8mcuWeSlMBFIbbkC7nVoLjmtpDisfGaezJhaWG4saDJqq4qrouXNpR4KGUPhal52bWl3rZgD9K6HDPBy50pzN668NYlWyn04SW54UohtrcuvfUKC8fMSoP1gbHOO1BS2wZs0LMz8t7evmHvPQvYcnEzI8cGfP8dYsASWQu7w8AJCFObE8yQLUrIfPo7MHVpTTv1f-bYHuMca5G64pbk3IJBMJPCWF1nliyvb1edmc8H7A4q-QykEM841fyyKoxx8UFYXUC3gJPraW8nCZouSb5HDVHIZ77zyx1w3VlmMmDXOSYqNjtipSJRQ2Ja8tO9sbisY6R2JR0NtCWQBuy-64aNke8rF6-Vfg8PEP4k6zmZc2zAibzrOzyq1bs1LcYuVcVVFw1Po99mf6PRaTQ5oO8T6Cq9LfSFW0KF0oDWFKwkz_KjmD8cRPselgHDt66d43AyWUoN-Ser-fcZNchVc24BO4gIiNUgcidU5RUNREkXFqPSHt3qIqcxyhd6tALUtftLX12wNbVPUMGaxviYw4bjxazpWryhm-Lih5TVwVPLevt0-FMrdxlpwbeaI7HhpXEIFgHay5fGUTDxMWj8Sn_TeBxeBONgEE36wWAUjoejHt3ReBRdjMaTaRhOg_EYzZO3Hn3xSfsXk6A_jIZBNJ32wxBjQV5YqW-a76b_fL79AZbbq90?type=png)](https://mermaid.live/edit#pako:eNqFlF1v2jAUhv-KZam7oi2BhI9cTIIEqkqrVJWuFzO98JIDjZTYlu10o1X_-44doEnHVq5CznO-35NXmskcaEw3pfyVPXFtyX26FgR_M3YtVG1Jyi1_JOfnX8mcuWeSlMBFIbbkC7nVoLjmtpDisfGaezJhaWG4saDJqq4qrouXNpR4KGUPhal52bWl3rZgD9K6HDPBy50pzN668NYlWyn04SW54UohtrcuvfUKC8fMSoP1gbHOO1BS2wZs0LMz8t7evmHvPQvYcnEzI8cGfP8dYsASWQu7w8AJCFObE8yQLUrIfPo7MHVpTTv1f-bYHuMca5G64pbk3IJBMJPCWF1nliyvb1edmc8H7A4q-QykEM841fyyKoxx8UFYXUC3gJPraW8nCZouSb5HDVHIZ77zyx1w3VlmMmDXOSYqNjtipSJRQ2Ja8tO9sbisY6R2JR0NtCWQBuy-64aNke8rF6-Vfg8PEP4k6zmZc2zAibzrOzyq1bs1LcYuVcVVFw1Po99mf6PRaTQ5oO8T6Cq9LfSFW0KF0oDWFKwkz_KjmD8cRPselgHDt66d43AyWUoN-Ser-fcZNchVc24BO4gIiNUgcidU5RUNREkXFqPSHt3qIqcxyhd6tALUtftLX12wNbVPUMGaxviYw4bjxazpWryhm-Lih5TVwVPLevt0-FMrdxlpwbeaI7HhpXEIFgHay5fGUTDxMWj8Sn_TeBxeBONgEE36wWAUjoejHt3ReBRdjMaTaRhOg_EYzZO3Hn3xSfsXk6A_jIZBNJ32wxBjQV5YqW-a76b_fL79AZbbq90)
+# Natural Disasters & Voting Analysis Workflow
+
+```mermaid
+flowchart TD
+    A[Input Data] --> B[Data Cleaning & Preparation]
+    B --> C[Disaster Summarization]
+    C --> D[Visualization]
+    D --> E[Voting Analysis]
+    E --> F[Spatial Mapping]
+    F --> G[Interpretation & Reporting]
+
+    A --> A1[FEMA Disaster Data]
+    A --> A2[County & Census Data]
+    A --> A3[Election Results (US, LA, CA)]
+    B --> B1[Format dates & construct FIPS]
+    B --> B2[Remove invalid/missing entries]
+    C --> C1[Count disasters per county/year]
+    C --> C2[Identify top 5 counties by total disasters]
+    D --> D1[Total disasters in US by year (dot-line chart)]
+    D --> D2[Top 5 counties by total disasters (bar chart)]
+    D --> D3[Disasters by county: US map]
+    D --> D4[Disasters by county: LA map]
+    D --> D5[Disasters by county: CA map]
+    E --> E1[Process election results]
+    E --> E2[Compare disasters to voter turnout (scatterplot)]
+    F --> F1[Map US counties colored by total disasters]
+    G --> G1[Summarize trends & prepare poster]
