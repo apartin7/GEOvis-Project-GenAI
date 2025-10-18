@@ -1,13 +1,40 @@
+# Natural Disasters & Voting Analysis Workflow
+
 ```mermaid
 flowchart TD
-    A[Data Collection] --> B[Data Cleaning & Preparation]
-    B --> C[Exploratory Data Analysis (EDA)]
-    C --> D[Statistical Modeling]
-    D --> E[Visualization]
-    E --> F[Interpretation & Reporting]
+    A[Input Data] --> B[Data Cleaning & Preparation]
+    B --> C[Disaster Summarization]
+    C --> D[Visualization]
+    D --> E[Voting Analysis]
+    E --> F[Spatial Mapping]
+    F --> G[Interpretation & Reporting]
 
-    %% Example sub-steps
-    A --> A1[FEMA disaster data]
-    A --> A2[County-level census data]
-    B --> B1[Remove missing values]
-    B --> B2[Standardize column names]
+    %% Input Data
+    A --> A1[FEMA Disaster Data]
+    A --> A2[County & Census Data]
+    A --> A3[Election Results (US, LA, CA)]
+
+    %% Data Cleaning & Preparation
+    B --> B1[Format dates & construct FIPS]
+    B --> B2[Remove invalid/missing entries]
+
+    %% Disaster Summarization
+    C --> C1[Count disasters per county/year]
+    C --> C2[Identify top 5 counties by total disasters]
+
+    %% Visualization
+    D --> D1[Total disasters in US by year (dot-line chart)]
+    D --> D2[Top 5 counties by total disasters (bar chart)]
+    D --> D3[Disasters by county: US map]
+    D --> D4[Disasters by county: LA map]
+    D --> D5[Disasters by county: CA map]
+
+    %% Voting Analysis
+    E --> E1[Process election results]
+    E --> E2[Compare disasters to voter turnout (scatterplot)]
+
+    %% Spatial Mapping
+    F --> F1[Map US counties colored by total disasters]
+
+    %% Interpretation & Reporting
+    G --> G1[Summarize trends & prepare poster]
