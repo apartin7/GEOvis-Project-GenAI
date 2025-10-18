@@ -1,0 +1,13 @@
+```mermaid
+flowchart TD
+    A[Data Collection] --> B[Data Cleaning & Preparation]
+    B --> C[Exploratory Data Analysis (EDA)]
+    C --> D[Statistical Modeling]
+    D --> E[Visualization]
+    E --> F[Interpretation & Reporting]
+
+    %% Example sub-steps
+    A --> A1[FEMA disaster data]
+    A --> A2[County-level census data]
+    B --> B1[Remove missing values]
+    B --> B2[Standardize column names]
