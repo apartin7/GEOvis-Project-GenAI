@@ -1,1 +1,1 @@
-# GEOvis-Project-1
+# GEOvis-Project-GenAI
